@@ -19,7 +19,7 @@ public class MedicoController {
 
     @PostMapping
     @Transactional
-    public void cadstrar(@RequestBody @Valid DadosCadstroMedicos dados) {
+    public void cadstrar(@RequestBody @Valid DadosCadastroMedicos dados) {
         repository.save(new Medico(dados));
     }
 
