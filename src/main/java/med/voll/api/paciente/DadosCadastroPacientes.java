@@ -7,6 +7,11 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import med.voll.api.endereco.DadosEndereco;
 
+// DTO: Data Transfer Object é usado para transferir dados.
+/* Ou receber os dados ou enviar dados. Para não enviar uma entidade inteira
+   Pode usar isso para selecionar só as informações necessárias.
+* */
+// Record é uma forma de criar uma classe só com atributos.
 public record DadosCadastroPacientes(
 
         @NotBlank

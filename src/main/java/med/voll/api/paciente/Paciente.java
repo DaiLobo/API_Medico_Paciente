@@ -10,12 +10,16 @@ import med.voll.api.endereco.Endereco;
 @Table(name = "pacientes")
 @Entity(name = "Paciente")
 @Getter
+//Construtor com nenhum parâmetro
 @NoArgsConstructor
+//Construtor com todos os atributos com parâmetros
 @AllArgsConstructor
+//Indica qual o tipo da primary key.
 @EqualsAndHashCode(of = "id")
 public class Paciente {
 
     @Id
+    //Valor ser gerado automaticamente.
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
